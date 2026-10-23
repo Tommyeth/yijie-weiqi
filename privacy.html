@@ -15,6 +15,8 @@
   h1 { font-size: 28px; margin: 0 0 4px; }
   .sub { color: #8e8e93; margin: 0 0 36px; }
   h2 { font-size: 19px; margin: 36px 0 10px; }
+  h3 { font-size: 16px; margin: 24px 0 6px; }
+  code { font-size: 14px; background: #8e8e9320; padding: 1px 5px; border-radius: 4px; }
   ul { padding-left: 22px; }
   a { color: #007aff; }
   hr { border: none; border-top: 1px solid #8e8e9340; margin: 48px 0 24px; }
@@ -24,45 +26,42 @@
 </style>
 </head>
 <body>
-
 <h1>隐私政策</h1>
-<p class="sub">一解围棋 · 最后更新：2026 年 8 月 5 日</p>
-
-<h2>简而言之</h2>
-<p><strong>一解围棋不收集任何数据。</strong>App 完全在你的设备上离线运行，不需要注册或登录，也不会向任何服务器发送数据。</p>
-
-<h2>我们收集的信息</h2>
-<p>无。本 App 不收集、不存储、不传输任何个人信息或使用数据，包括但不限于：姓名、邮箱、电话、位置、设备标识符、棋谱内容、使用统计和崩溃日志。</p>
-
-<h2>数据如何处理</h2>
+<p class="sub">一解围棋 · 最后更新：2026 年 10 月 23 日</p>
+<h2>本机功能与联网功能</h2>
+<p>一解围棋的 KataGo 对弈、题库、教学和本地复盘在设备上运行，无需注册账号。会员验证、学习奖励、主动分享、可选的第三方 AI 问答及 iCloud 同步会使用网络。macOS 1.2 修复版暂不开放云端整谱分析和 AI 积分购买，也不提供 iOS 的录屏教练与拍照识别功能。</p>
+<h2>我们处理的信息与用途</h2>
 <ul>
-  <li>围棋引擎的全部计算在你的设备本地完成，不依赖网络。</li>
-  <li>你的对局记录和偏好设置仅保存在设备本机，不会离开设备。</li>
-  <li>删除 App 即可清除全部本地数据。</li>
+<li><strong>设备与账户标识：</strong>App 生成随机设备标识和随机账户 UUID，用于会员设备管理、学习奖励及服务器记录关联。账户 UUID 可通过你的 iCloud 在设备间同步。这些标识不是广告标识符，但相关记录可与同一设备或账户关联。</li>
+<li><strong>购买信息：</strong>Apple 签名的交易凭证、商品及交易标识、App 账户令牌用于验证会员并防止重复处理。Apple 不会通过这些凭证向我们提供你的 Apple ID 密码或银行卡信息。支付由 Apple 处理。</li>
+<li><strong>学习任务进度：</strong>已学课程、做题等任务计数与奖励领取记录会发送到服务器，用于显示任务进度、发放奖励和恢复奖励记录。</li>
+<li><strong>设备与诊断信息：</strong>会员服务会接收设备型号、系统和 App 版本。iOS 版还会在模型运行期间采集性能数据，包括内存与 CPU 占用、发热、电量、磁盘读写和网络流量计数，用于分析性能与稳定性；网络计数是整机接口计数，不是浏览历史或网络通信内容。macOS 1.2 不启用这项定时性能采样。</li>
+<li><strong>主动分享的棋谱：</strong>只有你选择生成分享链接时，对应 SGF（包括着法、棋手名称、注释、结果等已有内容）才会上传到我们的服务器。持有链接的人可以查看；你可在“我的分享”中撤回链接。</li>
+<li><strong>主动提交的反馈：</strong>你通过邮件或客服发送的描述、联系方式及自行附上的日志，用于答复和排查问题。发送前可查看和编辑内容。</li>
 </ul>
-
-<h2>第三方</h2>
-<p>本 App 不包含任何第三方分析工具、广告网络或数据收集 SDK。App 使用开源项目 KataGo（MIT 许可）作为围棋引擎，该引擎同样在本地运行，不进行任何网络通信。</p>
-
-<h2>儿童隐私</h2>
-<p>由于本 App 不收集任何数据，也不包含面向儿童的定向内容或广告，因此不涉及儿童个人信息的收集与使用。</p>
-
-<h2>政策变更</h2>
-<p>如果未来版本引入了会收集数据的功能，我们会在此页面更新本政策，并在 App 内明确告知。</p>
-
-<h2>联系我们</h2>
-<p>如对本隐私政策有任何疑问，请联系：<a href="mailto:3392236373@qq.com">3392236373@qq.com</a></p>
-
+<h2>自备 API 的 AI 问答与 iCloud</h2>
+<p>会员可配置自己的大模型 API。只有你发起提问时，问题、对话历史及有关的课程、题目、棋盘、棋谱、KataGo 分析或学习记忆才会从设备直接发给你选择的供应商，不经过一解服务器。API Key 保存在本机不可同步的 Keychain 条目中，不上传到一解服务器或 iCloud。供应商可能收费，并按其自身隐私政策处理与保存内容；请自行确认其服务条款。</p>
+<p>棋谱、偏好、对话与学习记忆可通过你的 Apple iCloud 在设备间同步。你可在设置中管理同步，并在 App 内清空相应对话或记忆。本机围棋计算不会因为这些可选功能改为云端计算。</p>
+<h2>云功能的版本差异</h2>
+<p>macOS 1.2 修复版不提供云端整谱分析或积分购买。其他版本若开放整谱云分析，只有你主动提交后才会上传所选 SGF；任务执行所需的输入、任务状态、结果及积分流水用于完成分析和结算。未开放的功能不会因本政策的描述而自动启用。实时单局面云分析目前不提供。</p>
+<h2>保存、管理与删除</h2>
+<p>服务器上的设备、会员、任务和交易记录在提供相关服务、维护购买权益及防止重复处理所需期间保留。主动分享的棋谱可在 App 内撤回；对话和学习记忆可在 App 内清空。第三方模型供应商的保留期限由其自身政策决定。删除 App 不会自动删除钥匙串、iCloud 或服务器记录；如需查询或删除服务器数据，请通过下方邮箱联系我们，我们会核实请求并处理。</p>
+<h2>第三方、跟踪与儿童</h2>
+<p>我们不出售数据，不使用广告标识符，也不将数据与其他公司的应用或网站数据结合用于广告跟踪。App 不含第三方广告或分析 SDK；本机引擎是开源 KataGo（MIT 许可）。Apple 提供支付与 iCloud 服务，用户选择的模型供应商提供可选 AI 问答。App 不提供定向广告；监护人如需管理或删除未成年人主动提供的数据，可联系我们。</p>
+<h2>政策变更与联系</h2>
+<p>我们会在此页更新数据处理说明；采集范围变化时会在 App 内告知并按需要重新征得同意。如有疑问或数据管理请求，请联系：<a href="mailto:3392236373@qq.com">3392236373@qq.com</a>。</p>
 <hr>
-
-<h2 class="en">Privacy Policy (English)</h2>
-<p class="en"><strong>Yijie Weiqi collects no data.</strong> The app runs entirely offline on your device. It requires no account or sign-in, contains no analytics, advertising, or third-party tracking SDKs, and never transmits any information to any server. Game records and preferences are stored only on your device and are removed when you delete the app. The Go engine is the open-source project KataGo (MIT license), which also runs locally with no network access. Questions: <a href="mailto:3392236373@qq.com">3392236373@qq.com</a></p>
-
+<h2>Privacy Policy (English)</h2>
+<p>Updated October 23, 2026. KataGo play, problems, lessons, and local review run on your device without account registration. Membership validation, learning rewards, sharing, optional third-party AI questions, and iCloud synchronization use a network. The macOS 1.2 repair release does not offer cloud whole-game analysis or AI credit purchases, or the iOS screen-coaching and camera features.</p>
+<p><strong>Data and purposes.</strong> We process random device and account identifiers for membership device management and rewards; device model, OS and app version for service operation; Apple-signed transaction identifiers, receipts and app-account tokens for purchase verification; and learning-task progress and reward records for rewards. Records can be linked to the same device or account. Apple does not provide Apple ID passwords or payment-card details through these receipts.</p>
+<p><strong>Diagnostics.</strong> While a model runs, iOS also collects performance measurements, including memory and CPU use, thermal and battery status, disk I/O and network-interface byte counters, to improve performance and stability. Network counters describe the device as a whole, not browsing history or communication contents. macOS 1.2 does not run this periodic performance sampler. Feedback descriptions, contact details and diagnostic logs that you choose to send are used to respond and troubleshoot.</p>
+<p><strong>Game sharing.</strong> When you choose to create a sharing link, that SGF, including any player names, comments, moves and result already in it, is uploaded to our server. Anyone with the link can view it. You can revoke shared links in the app.</p>
+<p><strong>Your own model API.</strong> When you submit a question, relevant questions, conversation history, lesson/problem text, board, SGF, KataGo results and learning memories are sent directly to your configured provider. API keys stay in a non-synchronizing local Keychain item and are not sent to our server or iCloud. The provider may charge and retain content under its own terms and privacy policy. Games, preferences, conversations and learning memories may sync through your Apple iCloud account. Synchronization and conversation/memory deletion controls are available in the app.</p>
+<p><strong>Cloud availability.</strong> Cloud whole-game analysis and AI credit purchases are disabled in the macOS 1.2 repair release. Where a different version offers whole-game cloud analysis, the selected SGF is uploaded only after an explicit submission; input, task status, results and credit records support analysis and settlement. Describing a feature here does not enable it. Real-time cloud position analysis is not currently offered.</p>
+<p><strong>Retention and deletion.</strong> Device, membership, task and transaction records are retained as needed to provide services, maintain entitlements and prevent duplicate processing. Shared links can be revoked, and conversations and learning memories can be cleared in the app. A model provider sets its own retention period. Uninstalling does not automatically erase Keychain, iCloud or server records. Contact us to request access to or deletion of server data; requests will be verified and handled.</p>
+<p><strong>Third parties and tracking.</strong> We do not sell data, use advertising identifiers, or combine data from other companies' apps or websites for advertising tracking. There are no third-party advertising or analytics SDKs. Apple provides payments and iCloud; your chosen model provider supplies optional AI responses. KataGo is open source under the MIT license. There is no targeted advertising. Guardians can contact us about data a child has supplied.</p>
+<p>We update this policy when practices change and provide in-app notice and renewed consent where needed. Questions or data requests: <a href="mailto:3392236373@qq.com">3392236373@qq.com</a>.</p>
 <hr>
-
-<footer>
-  © 2026 Suzhou Vector Sixteen Information Technology Co., Ltd. · <a href="index.html">技术支持</a>
-</footer>
-
+<footer>© 2026 Suzhou Vector Sixteen Information Technology Co., Ltd. · <a href="index.html">技术支持</a></footer>
 </body>
 </html>
